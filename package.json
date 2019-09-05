@@ -1,0 +1,22 @@
+{
+  "name": "crashpad-backend",
+  "version": "1.0.0",
+  "description": "api for crash pad app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christy-inman/crashpad-backend.git"
+  },
+  "author": "Christy Inman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christy-inman/crashpad-backend/issues"
+  },
+  "homepage": "https://github.com/christy-inman/crashpad-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

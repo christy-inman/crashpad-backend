@@ -16,6 +16,17 @@ exports.seed = function(knex) {
           state: 'CO',
           phone_number: '3036543210'
         },
+        {
+          name: 'Frank Smith',
+          email: 'franksmith@gmail.com',
+          username: 'frank',
+          password: 'joy',
+          profile_pic: 'https://i.pinimg.com/originals/eb/e6/da/ebe6da57088281ba0f315cafab554ab8.png',
+          travel_pic: 'https://render.fineartamerica.com/images/rendered/default/poster/8.000/5.375/break/images/artworkimages/medium/1/frank-sinatra-fly-me-to-the-moon-new-york-20170506-v4-wingsdomain-art-and-photography.jpg',
+          city: 'New York',
+          state: 'NY',
+          phone_number: '2127654321'
+        },
         
       ]);
     });

@@ -6,5 +6,8 @@ const port = process.env.PORT || 3000
 
 app.listen(port)
 
+app.get('/', (request, response) => {
+    response.send('CONNECTED')
+})
 
 console.log(`Listening on port ${port}`)

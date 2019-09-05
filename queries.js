@@ -13,5 +13,9 @@ module.exports = {
         return database('users')
             .where({id})
             .first()
+    },
+    createUser(user) {
+        return database('users')
+            .insert(user)
     }
 }

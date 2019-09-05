@@ -19,5 +19,9 @@ app.get('/:id', (request, response) => {
     queries.getById(request.params.id)
         .then(user => response.send(user))
 })
+app.post('/', (request, response) => {
+    queries.createUser(request.body)
+        .then(response.status(201))
+})
 
 console.log(`Listening on port ${port}`)

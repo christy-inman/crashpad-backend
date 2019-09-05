@@ -17,5 +17,10 @@ module.exports = {
     createUser(user) {
         return database('users')
             .insert(user)
+    },
+    updateUser(id, user) {
+        return database('users')
+            .where({id})
+            .update(user)
     }
 }

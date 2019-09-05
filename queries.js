@@ -8,5 +8,10 @@ module.exports = {
         return database('users')
             .where({id})
             .delete()
+    },
+    getById(id) {
+        return database('users')
+            .where({id})
+            .first()
     }
 }

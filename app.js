@@ -15,5 +15,9 @@ app.delete('/:id', (request, response) => {
     queries.deleteUser(request.params.id)
         .then(response.status(204))
 })
+app.get('/:id', (request, response) => {
+    queries.getById(request.params.id)
+        .then(user => response.send(user))
+})
 
 console.log(`Listening on port ${port}`)
